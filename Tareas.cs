@@ -10,9 +10,17 @@ namespace projectoeft.Models
 
         public string Descripcion {get; set;}
 
-        // Foreign key
-        public Guid CategoriaId { get; set; }
-        // Navigation property
+
         public Categoria Categoria { get; set; }
+
+        public Prioridad Prioridad { get; set; }
     }
+}
+
+public enum  {
+
+    Baja,
+    Media,
+
+    Alta
 }
