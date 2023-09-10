@@ -14,6 +14,8 @@ namespace projectoeft.Models
         public Categoria Categoria { get; set; }
 
         public Prioridad Prioridad { get; set; }
+
+        public DateTime FechaCreacion { get; set; }
     }
 }
 
