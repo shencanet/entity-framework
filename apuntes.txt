@@ -27,6 +27,5 @@ Instale las dependencias de Entity Framework Core que mencionas:
 
     code .
 
-    instalar nuget.org
 
 

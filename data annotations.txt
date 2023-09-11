@@ -1,0 +1,22 @@
+resumen de Data annotations
+
+ [key] ---> indica que es la clave primaria
+ [Required] ---> indica que es un campo obligatorio
+ [MaxLenght] ---> indica el tamaño maximo del campo
+ [MinLenght] ---> indica el tamaño minimo del campo
+ [StringLenght] ---> indica el tamaño maximo y minimo del campo
+ [RegularExpression] ---> indica que campo debe tener un formato especifico
+ [Range]---->indica que el campo debe tener un valor entre un rango especificado
+ [EmailAddress]---->indica que el campo debe tener un formato de correo electronico
+ [Phone]-----> indica que el campo debe tener un formato de telefono
+ [Url]----->indica que debe tener un formato de Url
+ [Compare]---->indica que el campo debe tener el mismo valor que otro campo
+ [DataType]--->indica que el campo debe tener un formato de datos especificos
+ [Column] ----->indica que es una columna 
+ [DatabaseGenerated]--->indica que se genera automaticamente por la base de datos
+ [Index]---->indica que que es un indice de lña base de datos
+ [InverseProperty]-----> indica que es una propiedad es la inversa de otra propiedad
+ [Complextype]---->indica que es un tipo complejo
+ [ConcurrencyCheck]---->indica que se debe verificar la concurrencia es decir que no se puede modificar una tarea si ya ha sido modoficada por otra persona
+ [Timestamp]--->indica que es un campo tipo timestamp para concurrencia
+ [Table]---->indica que es una tabla
