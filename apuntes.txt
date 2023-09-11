@@ -12,5 +12,21 @@
     Instalación para conectarnos con PostgreSQL
     dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 6.0.4
 
+   
+ ***************************************************************  
     instalacion basica
-    dotnet new web 
+    dotnet new web -f net6.0
+
+
+Instale las dependencias de Entity Framework Core que mencionas:
+    dotnet add package Microsoft.EntityFrameworkCore
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+
+
+    code .
+
+    instalar nuget.org
+
+
