@@ -1,4 +1,4 @@
-namespace projectoeft.Models
+namespace proyectoeft.Models
 {
     public class Tarea
     {
@@ -16,6 +16,8 @@ namespace projectoeft.Models
         public Prioridad Prioridad { get; set; }
 
         public DateTime FechaCreacion { get; set; }
+
+        public virtual Categoria Categoria { get; set; }
     }
 }
 
