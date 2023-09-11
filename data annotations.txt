@@ -1,4 +1,5 @@
 resumen de Data annotations
+using System.ComponentModel.DataAnnotations;
 
  [key] ---> indica que es la clave primaria
  [Required] ---> indica que es un campo obligatorio

@@ -22,6 +22,7 @@ Instale las dependencias de Entity Framework Core que mencionas:
     dotnet add package Microsoft.EntityFrameworkCore
     dotnet add package Microsoft.EntityFrameworkCore.InMemory
     dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    dotnet new gitignore
 
 
 
