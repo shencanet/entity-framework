@@ -1,15 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using Proyectoef.Models;
+using proyectoef.Models;
 
+namespace proyectoef;
 
-namespace Proyectoef;
+public class TareasContext: DbContext
+{
+    public DbSet<Categoria> Categorias {get;set;}
+    public DbSet<Tarea> Tareas {get;set;}
 
-public class TareasContesxt: DbContext{
-
-    public Dbset<Categoria> Categorias {get; set;}
-    public Dbset<Tarea> Tareas {get; set;}
-
-    public TareasContesxt(DbContextOptions<TareasContesxt> options): base(options){}
-
-
+    public TareasContext(DbContextOptions<TareasContext> options) :base(options) { }
 }
