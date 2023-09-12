@@ -24,6 +24,9 @@ using System.ComponentModel.DataAnnotations.Schema;
         public DateTime FechaCreacion { get; set; }
 
         public virtual Categoria Categoria { get; set; }
+
+        [NotMapped]
+        public string Resumen { get; set; }
     }
 }
 

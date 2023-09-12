@@ -21,3 +21,4 @@ using System.ComponentModel.DataAnnotations;
  [ConcurrencyCheck]---->indica que se debe verificar la concurrencia es decir que no se puede modificar una tarea si ya ha sido modoficada por otra persona
  [Timestamp]--->indica que es un campo tipo timestamp para concurrencia
  [Table]---->indica que es una tabla
+ [NotMapped]--->
