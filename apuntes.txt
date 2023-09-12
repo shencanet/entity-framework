@@ -28,5 +28,12 @@ Instale las dependencias de Entity Framework Core que mencionas:
 
     code .
 
+builder.Services.AddDbContext<HomeworkContext>(p => p.UseInMemoryDatabase("TareasDB"));
+
+Para los que tienen problemas al ejecutar los certificados:
+
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
+
 
 
