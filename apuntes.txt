@@ -28,7 +28,30 @@ Instale las dependencias de Entity Framework Core que mencionas:
 
     code .
 
+    
+Utilizando base de datos en memoria
+
+El método UseInMemoryDatabase se utiliza para especificar que se debe usar una base de datos en memoria en lugar de una base de datos en disco. Esto puede ser útil para fines de prueba o para aplicaciones con una cantidad limitada de datos que no requieren una base de datos persistente.
+
 builder.Services.AddDbContext<HomeworkContext>(p => p.UseInMemoryDatabase("TareasDB"));
+
+Esta línea de código está agregando un contexto de base de datos al contenedor de servicios en .NET Core utilizando el método AddDbContext del objeto IServiceCollection llamado builder.Services. La clase HomeworkContext es la clase que representa el contexto de la base de datos y se está configurando para usar una base de datos en memoria con el nombre “TareasDB”.
+Definimos nuestro endpoint
+
+app.MapGet("/dbconexion", async ([FromServices] HomeworkContext dbContext) => 
+{
+    dbContext.Database.EnsureCreated();
+    return Results.Ok("Base de datos en memoria: " + dbContext.Database.IsInMemory());
+
+});
+
+La ruta se está implementando como una función async que recibe una instancia de la clase HomeworkContext a través del atributo [FromServices].
+
+La función realiza dos acciones:
+
+    Llamada al método EnsureCreated en el objeto dbContext.Database. Este método asegura que la base de datos está creada y lista para su uso.
+    Devolución de una respuesta HTTP 200 OK con un mensaje que indica si la base de datos es una base de datos en memoria o no. Esto se logra mediante la llamada a dbContext.Database.IsInMemory().
+
 
 Para los que tienen problemas al ejecutar los certificados:
 
