@@ -1943,11 +1943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santi\\projectoef\\proyectoef.csproj",
+      "projectUniqueName": "c:\\Users\\santi\\projectoef\\proyectoef.csproj",
       "projectName": "proyectoef",
-      "projectPath": "C:\\Users\\santi\\projectoef\\proyectoef.csproj",
+      "projectPath": "c:\\Users\\santi\\projectoef\\proyectoef.csproj",
       "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santi\\projectoef\\obj\\",
+      "outputPath": "c:\\Users\\santi\\projectoef\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"
