@@ -58,5 +58,18 @@ Para los que tienen problemas al ejecutar los certificados:
 dotnet dev-certs https --clean
 dotnet dev-certs https --trust
 
+AZURE
+Recursos
+Instancias de los servicios disponibles: Máquinas virtuales, discos duros y bases de datos.
+
+Grupos de recursos
+Contenedor lógico donde se implementan y administran recursos de Azure. Un recurso puede pertenecer a un solo GR pero puede comunicarse con recursos de otro GR.
+
+Suscripciones
+Agrupación de cuentas de usuario y recursos creados por estas cuentas. Puede tener límites o cuotas definidas.
+
+Grupos de administración
+Administran el acceso, las directivas y cumplimiento de las suscripciones. Las suscripciones heredan las condiciones de su grupo.
+
 
 
